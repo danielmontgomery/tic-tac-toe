@@ -30,14 +30,6 @@
 						</div>
 						<div id="boardbg">
 						</div>
-<!-- 						<div id="vLine1" class="vlines">
-						</div>
-						<div id="vLine2" class="vlines">
-						</div>
-						<div id="hLine1" class="lines">
-						</div>
-						<div id="hLine2" class="lines">
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -49,7 +41,55 @@
 		</div>
 	</div>
 
+<script>
+var win1 = [0,1,2,null,null,null,null,null,null];
+var win2 = [null,null,null,3,4,5,null,null,null];
+var win3 = [null,null,null,null,null,null,6,7,8];
+var win4 = [0,null,null,3,null,null,6,null,null];
+var win5 = [null,1,null,null,4,null,null,7,null];
+var win6 = [null,null,2,null,null,5,null,null,8];
+var win7 = [0,null,null,null,4,null,null,null,8];
+var win8 = [null,null,2,null,4,null,6,null,null];
+//defines empty variables with 8 places for the two users:
+var user1 = [null,null,null,null,null,null,null,null,null];
+var user2 = [null,null,null,null,null,null,null,null,null];
+var user1Name;
+var user2Name;
+//The lastUser variable 
+var lastUser = user1.slice();
+var lastUserName;
+console.log(lastUser);
+var currentGameIcon;
+var gameIcon1 = "x";
+var gameIcon2 = "o";
 
-<script src="game.js"></script>
+for(var i = 0; i < 9; i++){
+var x = document.getElementsByClassName("gamespot");
+x[i].addEventListener("click", function() {
+	userChoice = this;
+	console.log(this);
+	var y = true;
+	function toggle(){
+		y =! y;
+		return(y);
+	}
+	y = toggle(y);
+	console.log(y);
+	if(y === true){
+			currentUser = user1;
+		currentUserName = user1Name;
+		currentGameIcon = gameIcon1;
+		this.className = "closed";
+		}
+	else if(y === false){
+			currentUser = user2;
+		currentUserName = user2Name;
+		currentGameIcon = gameIcon2;
+		this.className = "open";
+	}
+});
+};
+</script>
+<!-- <script src="game.js" defer></script> -->
 </body>
 </html>
