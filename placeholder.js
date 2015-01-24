@@ -1,47 +1,3 @@
-<html>
-<head>
-	<title>Tic Tac Toe</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,100,400' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<div id="wrapper">
-		<div id="container">
-			<div id="titleBox">
-				<div id="leftSide" class="half">
-					<div id="board">
-						<div id="s0" class="gameSpot" value="0" onclick="f0()">
-						</div>
-						<div id="s1" class="gameSpot" value="1" onclick="f1()">
-						</div>
-						<div id="s2" class="gameSpot" value="2" onclick="f2()">
-						</div>
-						<div id="s3" class="gameSpot" value="3" onclick="f3()">
-						</div>
-						<div id="s4" class="gameSpot" value="4" onclick="f4()">
-						</div>
-						<div id="s5" class="gameSpot" value="5" onclick="f5()">
-						</div>
-						<div id="s6" class="gameSpot" value="6" onclick="f6()">
-						</div>
-						<div id="s7" class="gameSpot" value="7" onclick="f7()">
-						</div>
-						<div id="s8" class="gameSpot" value="8" onclick="f8()">
-						</div>
-						<div id="boardbg">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="rightSide" class="half">
-				<div id="gameLog">
-					<h2>Game Log</h2>
-				</div>
-			</div>
-		</div>
-	</div>
-
-<script>
 var win1 = [0,1,2,null,null,null,null,null,null];
 var win2 = [null,null,null,3,4,5,null,null,null];
 var win3 = [null,null,null,null,null,null,6,7,8];
@@ -60,8 +16,8 @@ var lastUser = user1.slice();
 var lastUserName;
 console.log(lastUser);
 var currentGameIcon;
-var gameIcon1 = "x";
-var gameIcon2 = "o";
+var gameIcon1 = "o";
+var gameIcon2 = "x";
 var y = false;
 var i = 0
 var x = document.getElementsByClassName("gameSpot");
@@ -150,11 +106,4 @@ for(var i = 0; i < x.length; i++){
 		}
 	// },);
 };
-</script>
-<!-- <script src="game.js" defer></script> -->
-</body>
-</html>
-<!-- 
-//I want only the button that was clicked, so I should have two loops. One is running through the entire board conditions checking everything, the other is for 
-just the square that is clicked. 
- -->
+// </script>

@@ -82,7 +82,7 @@ var gameIcon1 = "x";
 var gameIcon2 = "o";
 =======================================================
 
-fucking around with arrays:
+messing around with arrays:
 for(var i=0; i < 9)
 var x = document.getElementsByClassName("gamespot");
 
@@ -149,6 +149,12 @@ var x = document.getElementsByClassName("gamespot");
 
 // Adding an X or an O to the game board. 
 // Need to define user choice. 
+
+=======================================
+Here is what I need to happen: 
+Whenever I click on a square, it is selected through the x[i] event listener. 
+
+=======================================
 
 
 
