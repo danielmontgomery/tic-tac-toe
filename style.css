@@ -91,7 +91,7 @@ body {
 	z-index: 3;
 	position: relative;
 }
-.closed {
+#closed {
 	background-color: red;
 	width: 30%;
 	height: 30%;
